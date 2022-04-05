@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import List from "./List";
+import './styles.css';
 
 const Welcome = ({items}) => {
 

@@ -1,16 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import './styles.css'
 
 const Item = ({ items }) => {
 
     const { chipNumber } = useParams();
-
-
-    // const filter = items.filter(item => item.chipNumber === chipNumber).map((filteredItem, index) => {
-
-    //     <ul key={index}>{filteredItem}</ul>
-    // })
 
     const filter = items.filter(item => {
         return item.chipNumber === chipNumber
@@ -20,7 +15,7 @@ const Item = ({ items }) => {
 
         <>
             {filter.map(item =>
-                <div className="filter">
+                <div className="container">
                     <img className="img" src={item.img} alt="" />
                     <h1> Name : {item.name}</h1>
                     <h3>Sex : {item.sex}</h3>

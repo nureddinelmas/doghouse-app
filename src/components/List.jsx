@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import './styles.css'
+import './styles.css';
 
 const List = ({ items }) => {
     return (
@@ -12,12 +12,11 @@ const List = ({ items }) => {
 
                     {
                         items.map((data, index) => (
-                            <ul key={index}>
+                            <div className="container" key={index}>
                                 <img src={data.img} alt="" />
                                 <h3 className="title">{data.name}</h3>
                                 <Link to={`/items/${data.chipNumber}`}> <button>More</button></Link>
-
-                            </ul>
+                            </div>
 
                         ))
                     }

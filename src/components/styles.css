@@ -22,16 +22,14 @@ img {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
-   
     margin: auto;
     text-align: center;
     font-family: arial;
-
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
     justify-content: center;
-    padding: 0px;
+    padding: 5px;
 }
 
 .title {
@@ -57,10 +55,12 @@ button{
     width: 100%;
     font-size: 12px;
     border-radius: 10px;
+    transition: transform 3s;
 }
 
 button:hover, a:hover {
     opacity: 0.7;
+    /* transform: scale(2,2) rotate(0deg); */
   }
 
   h1 {
@@ -68,13 +68,18 @@ button:hover, a:hover {
       align-items: center;
   }
 
-  .filter {
-      display: flex;
-      flex-direction: column;
+  .container {
        margin-top: 20px;
+       gap: 0px;
       justify-content: center;
       align-items: center;
+      transition: display 5s ease-in-out;
+      cursor: pointer;
 
+  }
+
+  .container:hover{
+        display: inline;
   }
 
   @media screen and (max-width : 800px){
