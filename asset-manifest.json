@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/doghouse-app/static/css/main.d7899c64.css",
-    "main.js": "/doghouse-app/static/js/main.81d2df39.js",
+    "main.css": "/doghouse-app/static/css/main.ed526261.css",
+    "main.js": "/doghouse-app/static/js/main.fa9c200c.js",
     "static/js/787.f31b7d97.chunk.js": "/doghouse-app/static/js/787.f31b7d97.chunk.js",
+    "static/media/dogwelcome.jpeg": "/doghouse-app/static/media/dogwelcome.5cf008a34623f0b6c419.jpeg",
     "index.html": "/doghouse-app/index.html",
-    "main.d7899c64.css.map": "/doghouse-app/static/css/main.d7899c64.css.map",
-    "main.81d2df39.js.map": "/doghouse-app/static/js/main.81d2df39.js.map",
+    "main.ed526261.css.map": "/doghouse-app/static/css/main.ed526261.css.map",
+    "main.fa9c200c.js.map": "/doghouse-app/static/js/main.fa9c200c.js.map",
     "787.f31b7d97.chunk.js.map": "/doghouse-app/static/js/787.f31b7d97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7899c64.css",
-    "static/js/main.81d2df39.js"
+    "static/css/main.ed526261.css",
+    "static/js/main.fa9c200c.js"
   ]
 }
