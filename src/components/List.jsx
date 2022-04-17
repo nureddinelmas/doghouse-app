@@ -5,18 +5,24 @@ import './styles.css';
 const List = ({ items }) => {
     return (
         <main>
-            <div>
-                <h1 className="h1"> List of dogs </h1>
+            <div className="listOf">
+            <h1 className="dogcare"> List of Dogs </h1>
 
                 <div className="card">
 
                     {
+
                         items.map((data, index) => (
-                            <div className="container" key={index}>
-                                <img src={data.img} alt="" />
-                                <h3 className="title">{data.name}</h3>
-                                <Link to={`/items/${data.chipNumber}`}> <button>More</button></Link>
+
+                            <div key={index} className="dog">
+                                <div style={{ background: `url(${data.img}) no-repeat center/cover`, }} className="dogBg"><img src={data.img} alt="" /></div>
+
+                                <div className="dogInfo"><p>{data.name}</p>
+                                    <Link to={`/items/${data.chipNumber}`}>View more</Link>
+                                </div>
                             </div>
+
+
 
                         ))
                     }

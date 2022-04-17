@@ -7,6 +7,7 @@ const Item = ({ items }) => {
 
     const { chipNumber } = useParams();
 
+
     const filter = items.filter(item => {
         return item.chipNumber === chipNumber
     })

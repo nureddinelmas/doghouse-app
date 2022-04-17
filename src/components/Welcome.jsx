@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import './styles.css';
+import background from './img/dogwelcome.jpeg';
 
-const Welcome = ({items}) => {
+const Welcome = () => {
 
     return (
-        <section>
-            <h2>Welcome our Dogshem</h2>
+        <div className="welcomecard" >
             <Link to="/List">
-           <button>Go to Hund Listan</button>
+            <img src="https://img.vivense.com/480x320/images/dee4f110fdaa451b9fdc5feba11fe93b.jpg" alt="" />
            </Link>
-        </section>
+           <h1 className="dogcare">WELCOME DOG CARE</h1>
+        </div>
     )
 }
 

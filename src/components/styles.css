@@ -1,11 +1,11 @@
 body{
-    background-color: gray;
+    background-color: rgb(243, 233, 233);
 }
 img {
     display: block;
     width: 150px;
     height: 150px;
-    border-radius: 10px;
+
     justify-content: center;
     align-items: center;
 }
@@ -22,25 +22,21 @@ img {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+   
     margin: auto;
     text-align: center;
     font-family: arial;
+
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
     justify-content: center;
-    padding: 5px;
+    padding: 0px;
 }
 
 .title {
     font-size: 18px;
     justify-content: center;
-}
-
-.h1{
-    justify-content: center;
-    align-items: center;
-    margin-left: 660px;
 }
 
 button{
@@ -60,7 +56,7 @@ button{
 
 button:hover, a:hover {
     opacity: 0.7;
-    /* transform: scale(2,2) rotate(0deg); */
+    transform: scale(1.2,1.2) rotate(0deg);
   }
 
   h1 {
@@ -69,8 +65,10 @@ button:hover, a:hover {
   }
 
   .container {
+      display: flex;
+      flex-direction: column;
        margin-top: 20px;
-       gap: 0px;
+       gap: 10px;
       justify-content: center;
       align-items: center;
       transition: display 5s ease-in-out;
@@ -78,9 +76,7 @@ button:hover, a:hover {
 
   }
 
-  .container:hover{
-        display: inline;
-  }
+
 
   @media screen and (max-width : 800px){
       
@@ -91,3 +87,75 @@ button:hover, a:hover {
           margin-left: 200px;
       }
   }
+
+  .welcomecard{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    min-height: 710px;
+    align-items: center;
+    border: 2px solid black;
+    background-image: url(https://www.dokuzeylul.com/images/haberler/2020/09/kopekler_sevgi_dilini_anliyor_h172517_b598c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .dogcare{
+    color: #7c795d; 
+    font-family: 'Trocchi', serif; 
+    font-size: 45px; 
+    font-weight: normal; 
+    line-height: 48px; margin: 0; 
+    margin-top: 40px;
+  }
+
+.listOf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Recipe Styles */
+
+.dog {
+    width: 100%;
+    max-width: 330px;
+    margin: 28px 0 0 0;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  .dog a {
+    text-decoration: none;
+  }
+  
+  .dog a .dogBg {
+    width: 100%;
+    height: 280px;
+  }
+  
+  .dog .dogInfo {
+    background: #202342;
+    padding: 24px 34px;
+  }
+  
+  .dog .dogInfo p {
+    color: #fafafa;
+  }
+  
+  .dog .dogInfo p:last-of-type {
+    margin: 6px 0;
+  }
+  
+  .dog .dogInfo a {
+    display: inline-block;
+    margin: 4px 0 0 0;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #353b80;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
